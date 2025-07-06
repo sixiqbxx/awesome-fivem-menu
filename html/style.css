@@ -1,0 +1,25 @@
+body {
+  margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+}
+#menu {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20, 20, 20, 0.9);
+  padding: 20px; border-radius: 8px;
+  color: #eee; width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#menu h2 { margin: 0 0 10px; }
+#options { list-style: none; padding: 0; margin: 0; }
+#options li {
+  padding: 8px; margin-bottom: 5px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px; cursor: pointer;
+  transition: background 0.2s;
+}
+#options li:hover,
+#options li.active {
+  background: rgba(255,255,255,0.2);
+}
+.hidden { display: none; }
